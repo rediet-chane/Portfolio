@@ -56,11 +56,35 @@
             </div>
             <div class="hero-content">
                 <h4>Welcome</h4>
-                <h1>I`m<span class="input"> Rediet Chane</span></h1>
+                <h1>I`m<span class="input"> </span></h1>
                 <h4>Live in Addis Ababa, Ethiopia</h4>
                 <a href="#" class="btn">Hire Me</a>
             </div>
         </div>
     </div>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+        var typed=new Typed(" .input",{
+            strings:[" Rediet Chane", " 4th Year Computer Science Student", " Aspiring Software Engineer"],
+            typeSpeed:65,
+            backSpeed:55,
+            loop:true
+        });
+        let menuicon=document.querySelector(".menu-icon");
+        let navbar=document.querySelector(".navbar");
+        let icon=document.querySelector(".menu-icon");
+
+        menuicon.addEventListener("click",function(){
+           navbar.classList.toggle("open")
+           if(icon.classList.contains("fa-bars")){
+            icon.classList.remove("fa-bars");
+            icon.classList.add("fa-xmark");
+           }
+           else{
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars");
+           }
+        })
+    </script>
 </body>
 </html>

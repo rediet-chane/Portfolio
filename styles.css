@@ -31,6 +31,7 @@
     position: absolute;
     width: 100%;
     top: 80px;
+    left: 0;
     background-color: rgba(0, 0, 0, 0.8);
     padding: 15px ;
     display: flex;
@@ -52,6 +53,10 @@
 .topnav .navbar li a{
     color: #fff;
 }
+.topnav .navbar li:hover a{
+     color: goldenrod;
+    }
+   
 @media (min-width:900px){
     .navbar{
         display: none;
@@ -172,4 +177,21 @@
 .hero-content .btn :hover{
     color: #222;
     background-color:goldenrod ;
+}
+.hero-content .input{
+    color: goldenrod;
+}
+.open{
+    display: block !important;
+}
+@media(max-width:900px){
+    .sidebar{
+        display: none;
+    }
+    .hero-content{
+        margin-left: 10px;
+    }
+    .hero-content h1{
+        font-size: 2rem;
+    }
 }
