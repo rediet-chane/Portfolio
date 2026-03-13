@@ -56,15 +56,6 @@
 .topnav .navbar li:hover a{
      color: goldenrod;
     }
-   
-@media (min-width:40px){
-    .navbar{
-    display: none;
-    }
-    .topnav{
-        display: none;
-    }
-}
     
 
 .header{
@@ -214,7 +205,6 @@
         display: none;
     }
     
-    /* Your original mobile styles stay the same */
     .sidebar {
         display: none;
     }
