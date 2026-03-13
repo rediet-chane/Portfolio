@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redi - Portfolio</title>
+    <title>Redi - about me</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 
@@ -54,27 +53,20 @@
                     <a href="#"><i class="fab fa-github"></i> </a>
                 </div>
             </div>
-            <div class="hero-content">
-    <img src="https://rediet-chane.github.io/Portfolio/photo_portal.jpg" alt="Rediet Chane" class="mobile-photo">
-    <h4>Welcome</h4>
-    <h1>I`m <span class="input"> </span></h1>
-    <h4>Live in Addis Ababa, Ethiopia</h4>
-    <a href="#" class="btn">Hire Me</a>
-</div>
+            <div class="hero-content about-content">
+                <h1>About me</h1>
+                <p>My name is <i>Rediet Chane</i>, and I am a 4th year Computer Science student.<br>
+                I am passionate about software development and have a strong foundation in programming languages such as Python, Java, and JavaScript.<br>
+                I live in Addis Ababa, Ethiopia.<br>
+                </p>
+            </div>
         </div>
     </div>
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   <script>
-        var typed=new Typed(".input",{
-            strings:[" Rediet Chane", " 4th Year Computer Science Student", " Aspiring Software Engineer"],
-            typeSpeed:65,
-            backSpeed:55,
-            loop:true
-        });
-        let menuicon = document.querySelector(".menu-icon");
+let menuicon = document.querySelector(".menu-icon");
 let navbar = document.querySelector(".navbar");
 let icon = document.querySelector(".menu-icon i");
-
 menuicon.addEventListener("click", function() {
     navbar.classList.toggle("open");
     
