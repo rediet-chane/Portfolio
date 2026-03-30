@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redi - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <div class="topnav">
+        <div class="logo">
+            <h2>Rediet Chane</h2>
+        </div>
+        <div class="menu-icon">
+            <i class="fa fa-bars"></i>
+        </div>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="#">What I Do</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="header portfolio-header">
+        <div class="wrapper">
+            <div class="sidebar">
+                <div class="profile">
+                    <img src="https://rediet-chane.github.io/Portfolio/photo_portal.jpg" alt="Rediet Chane" width="100">
+                    <h2>Rediet Chane</h2>
+                </div>
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="#">What I Do</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-content">
+                <h1>My Work</h1>
+                <p class="portfolio-subtitle">Projects I've built — each one taught me something new.</p>
+                
+                <div class="projects-grid">
+                    <!-- Project 1: AI Job Recommender -->
+                    <div class="project-card">
+                        <div class="project-icon">🤖</div>
+                        <h3>AI Job Recommender</h3>
+                        <p>AI-powered tool that matches your skills with job opportunities. Built with Python, Flask, and AI APIs.</p>
+                        <div class="project-links">
+                            <a href="https://redi.pythonanywhere.com" target="_blank">Live Demo →</a>
+                            <a href="#" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Portfolio Website -->
+                    <div class="project-card">
+                        <div class="project-icon">📁</div>
+                        <h3>Personal Portfolio</h3>
+                        <p>Responsive portfolio website with mobile menu, typing animation, and dark theme. HTML, CSS, JavaScript.</p>
+                        <div class="project-links">
+                            <a href="https://rediet-chane.github.io/Portfolio/" target="_blank">Live Demo →</a>
+                            <a href="https://github.com/rediet-chane/Portfolio" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: MyProject (Early Work) -->
+                    <div class="project-card">
+                        <div class="project-icon">⚡</div>
+                        <h3>Frontend of online shopping</h3>
+                        <p>One of my first web projects — a simple site showing my growth as a developer. HTML, CSS, JavaScript.</p>
+                        <div class="project-links">
+                            <a href="https://rediet-chane.github.io/myproject/" target="_blank">Live Demo →</a>
+                            <a href="https://github.com/rediet-chane/myproject" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <img src="https://rediet-chane.github.io/Portfolio/photo_portal.jpg" alt="Rediet Chane" class="mobile-photo">
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        let menuicon = document.querySelector(".menu-icon");
+        let navbar = document.querySelector(".navbar");
+        let icon = document.querySelector(".menu-icon i");
+
+        menuicon.addEventListener("click", function() {
+            navbar.classList.toggle("open");
+            if(icon.classList.contains("fa-bars")) {
+                icon.classList.remove("fa-bars");
+                icon.classList.add("fa-xmark");
+            } else {
+                icon.classList.remove("fa-xmark");
+                icon.classList.add("fa-bars");
+            }
+        });
+    </script>
+</body>
+</html>
