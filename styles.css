@@ -434,3 +434,90 @@ html, body {
         font-size: 1rem;
     }
 }
+.contact-content {
+    margin-left: 260px;
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.contact-content h1 {
+    color: goldenrod;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.contact-subtitle {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 40px;
+    border-left: 3px solid goldenrod;
+    padding-left: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 15px 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.contact-item:hover {
+    background: rgba(0, 0, 0, 0.6);
+    border-color: goldenrod;
+    transform: translateX(5px);
+}
+
+.contact-item i {
+    font-size: 2rem;
+    color: goldenrod;
+    width: 50px;
+    text-align: center;
+}
+
+.contact-item h3 {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.contact-item a {
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-item a:hover {
+    color: goldenrod;
+}
+
+@media(max-width:900px){
+    .contact-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+    
+    .contact-content h1 {
+        font-size: 2rem;
+    }
+    
+    .contact-item {
+        padding: 12px 15px;
+    }
+    
+    .contact-item i {
+        font-size: 1.5rem;
+        width: 40px;
+    }
+}
